@@ -19,7 +19,8 @@ def login():
     if request.method == 'POST':
         reqJson = request.get_json()
         response = User.login(reqJson)
-
+    else:
+        response = Response('LOGIN ROUTE')
     return response
 
 
@@ -28,7 +29,8 @@ def login():
 def user(username=None):
     if request.method == 'GET':
         response = User.getUser(username, request.headers.get("Authorization"))
-
+    else:
+        response = Response('USER ROUTE')
     return response
 
 
@@ -44,7 +46,8 @@ def signup():
         except Exception as e:
             response = Response(json.dumps({"error": str(e)}), mimetype='application/json',
                                 status=status.HTTP_400_BAD_REQUEST)
-
+    else:
+        response = Response('SIGNUP ROUTE')
     return response
 
 
