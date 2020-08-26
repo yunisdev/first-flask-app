@@ -1,6 +1,8 @@
 asn1crypto==0.24.0
 astroid==1.6.6
+autopep8==1.5.4
 backports.functools-lru-cache==1.6.1
+code2flow==0.2
 configparser==3.5.0b2
 cryptography==2.6.1
 dbus-python==1.2.12
@@ -13,7 +15,9 @@ keyring==18.0.1
 keyrings.alt==3.1.1
 lazy-object-proxy==1.5.1
 mccabe==0.6.1
+pycodestyle==2.6.0
 pycrypto==2.6.1
+pyfiglet==0.8.post1
 PyGObject==3.34.0
 pylint==1.9.5
 pymongo==3.11.0
@@ -22,13 +26,9 @@ SecretStorage==2.3.1
 singledispatch==3.4.0.3
 sip==4.19.18
 six==1.12.0
+toml==0.10.1
 trimage==1.0.2
 vboxapi==1.0
 wrapt==1.12.1
 wxPython==3.0.2.0
 wxPython-common==3.0.2.0
-Flask~=1.1.2
-PyJWT~=1.4.2
-bcrypt~=3.1.7
-bson~=0.5.10
-flask_api
